@@ -1,0 +1,28 @@
+body {
+    background-color: #030028;
+}
+
+.nav-link {
+    color: #bfbfbf !important;
+    position: relative !important;
+    
+    &:hover {
+        color: #fff !important;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        background-color: #fff;
+        transform: translateX(-50%);
+        transition: all 0.2s;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+}
