@@ -1,5 +1,13 @@
+:root{
+    --bs-danger-rgb: 255, 35, 35;
+}
+
 body {
     background-color: #001121;
+}
+
+img{
+    width: 100%;
 }
 
 .nav-link {
@@ -31,7 +39,7 @@ body {
     width: 80%;
     aspect-ratio: 1/1 !important;
     position: relative;
-    border: 15px solid red;
+    border: 15px solid rgb(255, 35, 35);
     border-right-color: transparent;
     border-radius: 50% 0 0 50%;
     align-content: center;
@@ -46,10 +54,9 @@ body {
         content: '';
         height: calc(100% + 30px);
         aspect-ratio: 1/1;
-        border: 15px solid red;
+        border: 15px solid rgb(255, 35, 35);
         border-left: none;
         border-right: none;
-        /* background-color: #001121; */
     }
 }
 
