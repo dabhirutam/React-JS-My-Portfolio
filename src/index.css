@@ -1,9 +1,7 @@
+
 :root{
     --bs-danger-rgb: 255, 35, 35;
-}
-
-body {
-    background-color: #001121;
+    --bs-dark-rgb: 0, 17, 33;
 }
 
 img{
@@ -13,9 +11,11 @@ img{
 .nav-link {
     color: #bfbfbf !important;
     position: relative !important;
+    transition: all .4s;
 
     &:hover {
         color: #fff !important;
+        transform: translateY(-12%);
     }
 
     &::after {
@@ -27,7 +27,7 @@ img{
         height: 3px;
         background-color: #fff;
         transform: translateX(-50%);
-        transition: all 0.2s;
+        transition: all 0.3s;
     }
 
     &:hover::after {
@@ -36,35 +36,29 @@ img{
 }
 
 .custom-frame{
-    width: 80%;
-    aspect-ratio: 1/1 !important;
-    position: relative;
-    border: 15px solid rgb(255, 35, 35);
+    width: 98%;
+    border: 1rem solid rgb(255, 35, 35);
     border-right-color: transparent;
     border-radius: 50% 0 0 50%;
     align-content: center;
-    text-align: center;
-    background-color: #001121;
 
     &::after{
+        content: '';
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateY(-50%);
-        content: '';
-        height: calc(100% + 30px);
-        aspect-ratio: 1/1;
-        border: 15px solid rgb(255, 35, 35);
+        height: calc(100% + 31px);
+        width: 70vw;
+        border: 1rem solid rgb(255, 35, 35);
         border-left: none;
         border-right: none;
     }
 }
 
 .profile-image {
-    height: 100%;
     aspect-ratio: 1/1 !important;
     border-radius: 50% 50% 0 50%;
-    object-fit: cover;
     border: 15px solid #fff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
@@ -77,3 +71,41 @@ img{
         transform: rotate(360deg);
     }
 }
+
+
+
+
+/* .heading {
+	text-align: center;
+	width: 100%;
+	float: left;
+	padding-bottom:20px;
+}
+.heading h5 {
+	-webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: #00ff00;
+	font-size: 7vw;
+	color: red !important;
+	font-weight: 600;
+	letter-spacing: 0.8rem;
+	opacity: 0.05;
+	pointer-events: none;
+	margin: 0px;
+	padding: 0px;
+}
+.heading h2 {
+	font-weight: 600!important;
+	color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	bottom:70px;
+}
+.heading-border {
+	height: 4px;
+	width:40px;
+	margin-bottom:10px;
+	margin-top: 0px;
+	display: inline-block;
+	background-color:#cb7c6f;
+} */
