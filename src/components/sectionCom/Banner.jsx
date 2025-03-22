@@ -5,7 +5,7 @@ import pattern from "../../images/pattern.png";
 const Banner = () => {
 
     return (
-        <section className="p-5 overflow-x-hidden border-bottom position-relative">
+        <section className="py-5 overflow-x-hidden position-relative">
             <Container>
                 <Row className="align-items-center justify-content-between pt-5 my-5">
                     <Col md={6} className="text-white text-start">
