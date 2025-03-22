@@ -1,17 +1,21 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import Heading from "../helperCom/Heading";
-import aboutMeImage from "../../images/person.png";
+import profileImage from "../../images/my-img.png";
 
 const About = () => {
+  const skills = ["HTML", "CSS", "Jquery", "Bootstrap", "React JS", "JavaScript", "Node JS", "Express JS", "Mongo db"];
+
   return (
     <section className="py-5 text-center text-white">
       <Container>
-        <Row className="py-5">
+        <Row className="py-5 justify-content-center align-items-center">
           <Heading />
-          <Col md={5} xs={12} className="mb-4">
-            <img src={aboutMeImage} alt="About Me" className="img-fluid rounded" />
+          <Col lg={4} md={10} className="mb-4 mb-md-0">
+            <div className="rounded-circle as-1 overflow-hidden mx-auto" style={{ width: '20rem', border: '10px solid #fff', boxShadow: '0px 0px 10px #fff, inset 0px 1px 8px #fff' }}>
+              <img src={profileImage} alt="About Me" className="img-fluid" />
+            </div>
           </Col>
-          <Col md={7} xs={12}>
+          <Col lg={7} md={12}>
             <Card className="p-4 shadow-sm border-0 text-start bg-dark text-white">
               <Card.Body>
                 <h2 className="border-start border-2 border-danger ps-3">About Me</h2>
@@ -22,7 +26,7 @@ const About = () => {
 
                 <h2 className="border-start border-2 border-danger ps-3 mt-4">Technologies and Skills</h2>
                 <div className="d-flex flex-wrap gap-2 ps-3">
-                  {["HTML", "CSS", "Jquery", "Bootstrap", "React JS", "JavaScript", "Node JS", "Express JS", "Mongo db"].map((skill) => (
+                  {skills.map((skill) => (
                     <span key={skill} className="badge bg-dark text-white text-opacity-50 border-bottom border-light border-opacity-75 px-3 py-2 rounded-pill">{skill}</span>
                   ))}
                 </div>

@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import profileImage from "../../images/person.png";
+import profileImage from "../../images/my-img.png";
 import pattern from "../../images/pattern.png";
 
 const Banner = () => {
@@ -23,9 +23,9 @@ const Banner = () => {
                     <Col md={6} className="text-end mt-5 mt-md-0">
                         <div className="profile-container">
                             <div className="custom-frame ms-auto p-3 position-relative bg-dark">
-                                <img src={profileImage} alt="" className="profile-image object-fit-cover" />
-                                <div style={{ width: '107%', aspectRatio: '1/1', left: '-8%' }} className="position-absolute translate-middle-y top-50 z-n1 overflow-hidden">
-                                    <img className="object-fit-cover" style={{ width: '100%', aspectRatio: '1/1', animation: '50s linear infinite patternRotate' }} src={pattern} alt="" />
+                                <img src={profileImage} alt="" className="profile-image object-fit-cover as-1" />
+                                <div style={{ width: '107%', left: '-8%' }} className="position-absolute translate-middle-y top-50 z-n1 overflow-hidden">
+                                    <img className="object-fit-cover as-1" style={{ width: '100%', animation: '50s linear infinite patternRotate' }} src={pattern} alt="" />
                                 </div>
                             </div>
                         </div>
